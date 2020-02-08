@@ -1,0 +1,176 @@
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+//   }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  
+    // background-color: gray;
+  
+    // animation-name: changeBackground;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+    animation-fill-mode: forwards;
+    animation-fill-mode: both;
+  }
+  
+  .box {
+    width: 150px;
+    height: 150px;
+    border: 1px solid deeppink;
+  
+    // transform: translate(100px, 0);
+    // transform: translate(100px, 50px);
+  
+    // transform: rotate(45deg);
+    // transform: translate(100px, 50px) rotate(45deg);
+    // transform-origin: top left;
+  
+    // transform: translate(100px, 50px) rotate(45deg) scale(1.5);
+  
+    transition: all 0.25s linear 0s;
+    transition: background-color 0.25s linear 0s;
+    transition: width 0.25s linear 0s;
+    transition: width 0.25s linear 0s, background-color 0.25s linear 0s;
+  
+    &:hover {
+      width: 250px;
+      background-color: deeppink;
+    }
+  }
+  
+  @keyframes changeBackground {
+    from {
+      background-color: green;
+    }
+  
+    25% {
+      background-color: blue;
+    }
+  
+    50% {
+      background-color: yellow;
+    }
+  
+    75% {
+      background-color: purple;
+    }
+  
+    to {
+      background-color: green;
+    }
+  }
+  
+  // LOADING
+  @keyframes xoay {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid deeppink;
+  
+    border-right-color: transparent;
+    border-left-color: transparent;
+  
+    animation-name: xoay;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  
+  // Zoom in header
+  @keyframes zoomIn {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+  
+    25% {
+      opacity: 0;
+    }
+  
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .header {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+  
+    color: white;
+    background-color: deeppink;
+  
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  
+  .zoom-in {
+    margin: 1rem 0;
+    text-align: center;
+  
+    animation-name: zoomIn;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  
+  .delay-half {
+    animation-delay: 0.5s;
+  }
+  
+  .delay-1s {
+    animation-delay: 1s;
+  }
+  
+  .title {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+  
+    color: white;
+    background-color: deeppink;
+  
+    &__1 {
+      transform: rotate(4deg);
+      background-color: deeppink;
+    }
+  
+    &__2 {
+      background-color: #fdc856;
+    }
+  
+    &__3 {
+      transform: rotate(-3deg);
+      background-color: #bdde64;
+    }
+  }
+  

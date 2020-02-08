@@ -1,0 +1,62 @@
+/* NOTES:
+  - Phần hero này giống y chang giữa các trang, mình nên move ra main.css luôn thì sẽ tốt hơn.
+  - Nhớ tuân thủ thứ tự các properties nhé.
+*/
+
+/* Section About */
+.about__box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin: 90px 0;
+}
+
+.about__text {
+  width: 40%;
+  padding-right: 10px;
+}
+
+.about__image {
+  width: 60%;
+}
+
+/* NOTES: Khi chỉnh font-size thì nhớ chỉnh luôn line-height nhé. */
+.about__title {
+  font-size: 32px;
+}
+
+.about__description {
+  text-indent: 20px;
+  padding: 30px 10px 30px 0px;
+}
+
+.about__read-more {
+  background-color:deeppink;
+  color: white;
+
+  padding: 20px;
+  font-size: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+/* Section Facts */
+.facts {
+  background-color: rgba(200, 229, 236, 0.884);
+}
+
+.facts__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 90px;
+}
+
+
+p.facts__item-number {
+  font-size: 50px;
+  margin: 32px 0;
+}

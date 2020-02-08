@@ -1,0 +1,49 @@
+.app-footer {
+  background-image: url(/images/footer-bg.jpg);
+}
+
+/* NOTES: 
+  - Đừng bắt container làm flex-container? Nếu em hk muốn gặp rắc rối sau này. 
+  - Tại sao lại padding trái phải 50px chỗ này nhỉ?
+*/
+.app-footer__box{
+  padding: 48px 0;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* NOTES: Mình ko nên dùng kích thước cố định thế này nhé. Vì không phải hình nào cũng có đúng tỷ lệ này. */
+.app-footer__logo {
+  height: 69px;
+  width: 129px;
+}
+
+ul.app-footer__icon-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* NOTES: Mình có thể gộp thuộc tính margin lại đúng hk nhỉ? */
+ul.app-footer__icon-list > li {
+  margin: 0 16px;
+}
+
+ul.app-footer__icon-list > li > a {
+  color: gray;
+}
+
+ul.app-footer__menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul.app-footer__menu > li {
+  margin-right: 30px;
+  margin: 20px;
+}

@@ -1,0 +1,89 @@
+
+// Section recipies
+.recipies {
+  // margin: 50px;
+
+  // Title recipies
+  &__title-color {
+    display: inline-block;
+
+    background-color: deeppink;
+
+    height: 8px;
+    padding: 0 50px;
+  }
+
+  &__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+ul.recipies__list {
+  display: flex;
+  flex-flow: row wrap;
+
+  margin: -16px;
+
+  & > li {
+    width: 33.333333%;
+    padding: 16px;
+  }
+}
+
+.recipies__list-item {
+  position: relative;
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .recipies__info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    background-color: deeppink;
+
+    padding: 15px;
+  }
+
+  .recipies__info > h3 {
+  }
+
+  
+}
+
+.rating {
+  display: flex;
+  justify-content: flex-start;
+
+  color: gainsboro;
+
+  &__active {
+    color: yellow;
+  }
+}
+
+// so thu tu
+.site-pagination {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.site-pagination > a {
+  margin: 10px;
+  background-color: gray;
+  padding: 15px;
+}
+
+a.site-pagination__color {
+  background-color: deeppink;
+}

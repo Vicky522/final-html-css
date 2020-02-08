@@ -1,0 +1,106 @@
+.hero-section .img-hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.hero-section__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  color: white;
+}
+
+.widgets {
+  background-color: #f4f7fb;
+}
+
+.widgets__blog-item {
+  background-color: white;
+}
+
+.widgets__blog-text {
+  position: relative;
+}
+
+.widgets__blog-text .readMore {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: deeppink;
+  color: white;
+  padding: 5px;
+}
+
+ul.widgets__recipe-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.widgets__blog-thumb {
+  position: relative;
+}
+
+.widgets__blog-thumb--date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: deeppink;
+  color: white;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.img-blog-thumb {
+  width: auto;
+}
+
+.review {
+  background-color: #fdc856;
+}
+
+.review-item {
+  background-color: white;
+}
+
+.review-thumb {
+  position: relative;
+}
+
+.review-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: deeppink;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.css.map */

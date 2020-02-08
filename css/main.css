@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* font : poppins */
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  /* lam mat dau . truoc li */
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Section Hero */
+.hero {
+  background-image: url(/images/bg.jpg);
+  height: 220px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1.hero__title {
+  background-color: deeppink;
+  color: white;
+
+  height: 100px;
+  width: 400px;
+  font-size: 75px;
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
