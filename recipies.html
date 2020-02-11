@@ -18,10 +18,12 @@
 
 <body>
   <header>
+    <!-- Section TOP BAR -->
     <section class="top-bar">
       <div class="container">
         <div class="top-bar__box">
           <div class="top-bar__icons-wrapper">
+
             <ul class="top-bar__icon-list">
               <li><a href="https://www.pinterest.com/"><i class="fab fa-pinterest-square"></i></a></li>
               <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
@@ -31,34 +33,58 @@
               <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
+
           <div class="top-bar__links-wrapper">
             <a href="/">Register</a>
             <span>/</span>
             <a href="/">Login</a>
           </div>
+
         </div>
       </div>
     </section>
 
-
+    <!-- Section menu-nav -->
     <section class="top-nav">
       <div class="container">
+
         <div class="top-nav__box">
           <div class="top-nav__logo-wrapper">
             <img src="/images/logomain.svg" alt="logo" class="top-nav__logo">
           </div>
+
           <div class="top-nav__menu-wrapper">
             <ul class="top-nav__menu">
-              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html" style="color: deeppink;">Home</a></li>
               <li><a href="/recipies.html">Recipies</a></li>
               <li><a href="/recipies-detail.html">Recipies Detail</a></li>
               <li><a href="/about.html">About</a></li>
               <li><a href="/contact.html">Contact</a></li>
             </ul>
           </div>
+
           <div class="top-bar__search">
             <a href="/"><i><i class="fas fa-search"></i></i></a>
           </div>
+
+          <!-- top-nav menu mobile -->
+          <div class="menu">
+            <i class="fas fa-bars menu__item">
+
+              <ul class="menu__sub-menu">
+                <li class="menu__sub-menu-item"><a href="/index.html">Home</a></li>
+                <li class="menu__sub-menu-item  menu__item--active"><a href="/recipies.html">Recipies</a></li>
+                <li class="menu__sub-menu-item"><a href="/recipies-detail.html">Recipies Detail</a></li>
+                <li class="menu__sub-menu-item"><a href="/about.html">About</a></li>
+                <li class="menu__sub-menu-item"><a href="/contact.html">Contact</a></li>
+              </ul>
+
+            </i>
+
+
+
+          </div>
+
         </div>
       </div>
     </section>
@@ -84,7 +110,7 @@
           </div>
         </div>
 
-        <ul class="row recipies__list">
+        <ul class="row">
           <li class="col-lg-4 col-md-6">
             <div class="recipies__list-item">
               <img src="/images/recipes/1.jpg" alt="">
@@ -303,7 +329,7 @@
 
   <footer class="app-footer">
     <div class="container">
-      <div class="row">
+      <div class="row app-footer__menu-wrapper">
         <div class="col-lg-6">
           <img src="/images/logomain.svg" alt="logo" class="app-footer__logo">
           <ul class="app-footer__icon-list">
@@ -317,23 +343,22 @@
         </div>
 
         <div class="col-lg-6">
-          <div class="app-footer__menu-wrapper">
-            <ul class="app-footer__menu">
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/recipies.html">Recipies</a></li>
-              <li><a href="/recipies-detail.html">Recipies Detail</a></li>
-              <li><a href="/about.html">About</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-            <p class="app-footer__copy-right">Copyright © 2019 All rights reserved | This template is made
-              with
-              by
-              <span><a href="https://colorlib.com/">Colorlib</a></span>
-            </p>
-          </div>
+          <ul class="app-footer__menu">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/recipies.html">Recipies</a></li>
+            <li><a href="/recipies-detail.html">Recipies Detail</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <p class="app-footer__copy-right">Copyright © 2019 All rights reserved | This template is made
+            with
+            by
+            <span><a href="https://colorlib.com/">Colorlib</a></span>
+          </p>
         </div>
       </div>
     </div>
+
   </footer>
 
 </body>

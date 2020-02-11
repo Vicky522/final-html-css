@@ -1,26 +1,34 @@
 
 .hero-section{
     
-    .img-hero{
-        position: relative;
+    // .img-hero{
+    //     position: relative;
 
+    //     width: 100%;
+    //     height: auto;
+    // }
+    
+    &__text{
+        background-image: url(/images/slider-bg-2.jpg);
+        background-size: cover;
+        background-position: top center;
         width: 100%;
         height: auto;
-    }
+        vertical-align: middle;
 
-    &__text{
         display: flex;
-        flex-flow: column;
+        flex-flow: column wrap;
         justify-content: center;
         align-items: center;
 
-        position: absolute;
-        top: 50%;
-        left: 40%;
+        // position: absolute;
+        // top: 50%;
+        // left: 40%;
 
         color: white;
     }
 }
+
 // section Widgets
 .widgets{
     background-color: #f4f7fb;
@@ -67,16 +75,32 @@ ul.widgets__recipe-list li{
 }
 
 .img-blog-thumb{
-    width: auto;
+    width: 100%;
+}
+
+//  Image list widgets
+.image{
+    margin-bottom: 1rem;
+    margin-right: 8px;
+}
+
+.image > img{
+    width: 90px;
+    height: 90px;
 }
 
 // section Review
 .review{
 
-    background-color: #fdc856;
+    background-color: #40e0d0;
 
     &-item{
         background-color: white;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     &-thumb{
@@ -88,14 +112,17 @@ ul.widgets__recipe-list li{
         top: 0;
         left: 0;
 
-        background-color: deeppink;
+        background-color: #72b5b7;
         color: white;
-        font-size: 2rem;
         padding: 1rem;
 
     }
 }
 
+.img-thumb{
+    width: 50%;
+    height: 100%;
+}
  
 .author-img{
     width: 3rem;

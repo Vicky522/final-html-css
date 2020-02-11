@@ -1,26 +1,23 @@
-.hero-section .img-hero {
-  position: relative;
+.hero-section__text {
+  background-image: url(/images/slider-bg-2.jpg);
+  background-size: cover;
+  background-position: top center;
   width: 100%;
   height: auto;
-}
-
-.hero-section__text {
+  vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 40%;
   color: white;
 }
 
@@ -73,15 +70,38 @@ ul.widgets__recipe-list li {
 }
 
 .img-blog-thumb {
-  width: auto;
+  width: 100%;
+}
+
+.image {
+  margin-bottom: 1rem;
+  margin-right: 8px;
+}
+
+.image > img {
+  width: 90px;
+  height: 90px;
 }
 
 .review {
-  background-color: #fdc856;
+  background-color: #40e0d0;
 }
 
 .review-item {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .review-thumb {
@@ -92,10 +112,14 @@ ul.widgets__recipe-list li {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: deeppink;
+  background-color: #72b5b7;
   color: white;
-  font-size: 2rem;
   padding: 1rem;
+}
+
+.img-thumb {
+  width: 50%;
+  height: 100%;
 }
 
 .author-img {

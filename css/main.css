@@ -32,6 +32,8 @@ a {
 .hero {
   background-image: url(/images/bg.jpg);
   height: 220px;
+  width: 100%;
+  vertical-align: center;
 
   display: flex;
   flex-flow: row wrap;

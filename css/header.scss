@@ -1,0 +1,180 @@
+/* Section Top-bar */
+.top-bar {
+    padding: 8px 0;
+    background-color: deeppink;
+    color: #ffffff;
+    height: 50px;
+  }
+  
+  /* NOTES:
+    - Khi em dùng justify-content thì cần lưu ý là nó có tác dụng hay ko nhé.
+      Và lưu ý nó chỉ có tác dụng nếu flex container còn dư khoảng trắng thừa nhé.
+  */
+  .top-bar__box {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  
+  .top-bar__icons-wrapper {
+    width: 60%;
+  }
+  
+  .top-bar__icon-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  ul.top-bar__icon-list li {
+    margin-right: 35px;
+  }
+  
+  ul.top-bar__icon-list > li > a {
+    color: white;
+  }
+  
+  .top-bar__links-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+
+  }
+  
+  .top-bar__links-wrapper > a {
+    color: white;
+  }
+  
+  /* Section Nav */
+  .top-nav {
+
+    position: relative;
+    
+  }
+  
+  .top-nav__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+  }
+  
+  ul.top-nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  .top-nav__menu-wrapper{
+    @media only screen and (max-width:576px){
+        display: none;
+      }
+}
+  
+  ul.top-nav__menu > li {
+    margin-right: 60px;
+    
+  }
+  
+  ul.top-nav__menu > li > a:hover {
+    color: deeppink;
+    
+  }
+  
+  /* NOTES:
+    - Tại sao lại fix width, height cho logo nhỉ? Lỡ logo hình vuông thì sao?
+  */
+  .top-nav__logo {
+    /* height: 69px;
+    width: 129px; */
+    border-style: none;
+    width: 50%;
+  }
+  
+  // MULTI-LEVELS MENU 
+  .menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    
+  
+    list-style-type: none;
+
+    //Tablet
+    @media only screen and (min-width:768px){
+        display: none;
+      }
+
+
+    &__item > a {
+      display: block;
+      color: white;
+
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+  
+      transition: all .35s ease-in-out 0s;
+  
+      &:hover {
+        color: deeppink;
+        
+      }
+    }
+  
+    &__item {
+      // position: relative;
+      padding: 8px 16px;
+
+      display: block;
+  
+      &--active > a {
+        color: deeppink;
+      }
+    }
+  
+    
+    // LEVEL 2
+    &__sub-menu {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      z-index: 100;
+
+      background-color:#E1F4F3;
+  
+      display: none;
+      border: 1px solid #000;
+      list-style-type: none;
+    }
+  
+    &__item:hover > &__sub-menu {
+      display: block;
+    }
+  
+    &__sub-menu-item {
+      padding: 8px 16px;
+      border-top: 1px solid #ededed;
+    }
+  
+    &__sub-menu-item > a {
+      // color: black;
+  
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+  
+      transition: all .35s ease-in-out 0s;
+      white-space: nowrap;
+  
+      &:hover {
+        color: deeppink;
+      }
+    }
+  }
+  
+  

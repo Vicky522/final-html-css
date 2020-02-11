@@ -18,8 +18,8 @@
   padding-right: 10px;
 }
 
-.about__image {
-  width: 60%;
+.about__image img{
+  width: 100%;
 }
 
 /* NOTES: Khi chỉnh font-size thì nhớ chỉnh luôn line-height nhé. */

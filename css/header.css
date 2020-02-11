@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Section Top-bar */
 .top-bar {
   padding: 8px 0;
@@ -7,14 +8,21 @@
 }
 
 /* NOTES:
-  - Khi em dùng justify-content thì cần lưu ý là nó có tác dụng hay ko nhé.
-    Và lưu ý nó chỉ có tác dụng nếu flex container còn dư khoảng trắng thừa nhé.
-*/
+    - Khi em dùng justify-content thì cần lưu ý là nó có tác dụng hay ko nhé.
+      Và lưu ý nó chỉ có tác dụng nếu flex container còn dư khoảng trắng thừa nhé.
+  */
 .top-bar__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   /* justify-content: space-between; */
-  flex-flow: row wrap;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .top-bar__icons-wrapper {
@@ -22,10 +30,19 @@
 }
 
 .top-bar__icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 ul.top-bar__icon-list li {
@@ -37,8 +54,12 @@ ul.top-bar__icon-list > li > a {
 }
 
 .top-bar__links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 40%;
 }
 
@@ -48,40 +69,139 @@ ul.top-bar__icon-list > li > a {
 
 /* Section Nav */
 .top-nav {
-  margin: 10px;
+  position: relative;
 }
 
 .top-nav__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 ul.top-nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-
+@media only screen and (max-width: 576px) {
+  .top-nav__menu-wrapper {
+    display: none;
+  }
+}
 
 ul.top-nav__menu > li {
   margin-right: 60px;
-  
 }
 
 ul.top-nav__menu > li > a:hover {
   color: deeppink;
-  
 }
 
 /* NOTES:
-  - Tại sao lại fix width, height cho logo nhỉ? Lỡ logo hình vuông thì sao?
-*/
+    - Tại sao lại fix width, height cho logo nhỉ? Lỡ logo hình vuông thì sao?
+  */
 .top-nav__logo {
   /* height: 69px;
-  width: 129px; */
+    width: 129px; */
   border-style: none;
+  width: 50%;
 }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu__item > a {
+  display: block;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all .35s ease-in-out 0s;
+  transition: all .35s ease-in-out 0s;
+}
+
+.menu__item > a:hover {
+  color: deeppink;
+}
+
+.menu__item {
+  padding: 8px 16px;
+  display: block;
+}
+
+.menu__item--active > a {
+  color: deeppink;
+}
+
+.menu__sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: #E1F4F3;
+  display: none;
+  border: 1px solid #000;
+  list-style-type: none;
+}
+
+.menu__item:hover > .menu__sub-menu {
+  display: block;
+}
+
+.menu__sub-menu-item {
+  padding: 8px 16px;
+  border-top: 1px solid #ededed;
+}
+
+.menu__sub-menu-item > a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  -webkit-transition: all .35s ease-in-out 0s;
+  transition: all .35s ease-in-out 0s;
+  white-space: nowrap;
+}
+
+.menu__sub-menu-item > a:hover {
+  color: deeppink;
+}
+/*# sourceMappingURL=header.css.map */
