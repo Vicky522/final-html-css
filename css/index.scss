@@ -33,23 +33,33 @@
 
 .title{
     &__1{
-        padding: 1rem 5rem;
-        border-radius: 5px;
         font-size: 60px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 1rem 5rem;
+
+            box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
        
 
     }
 
     &__2{
-        padding: 1rem 5rem;
-        border-radius: 5px;
-        font-size: 60px;
+        font-size: 50px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 1rem 5rem;
+
+            box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+            
     }
 
     &__3{
-        padding: 1rem 5rem;
+        font-size: 40px;
+        text-align: center;
         border-radius: 5px;
-        font-size: 60px;
+        padding: 1rem 5rem;
+
+        box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
     }
 }
 
