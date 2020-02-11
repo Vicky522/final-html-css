@@ -27,6 +27,7 @@
     }
 }
 
+// btn send
 .site-btn{
     background-color:deeppink;
     color: white;
@@ -46,6 +47,11 @@
 
 .contact__list li{
     margin: 1rem;
+
+    h6{
+        color: deeppink;
+        font-size: 20px;
+    }
 }
 
 .contact__icon{

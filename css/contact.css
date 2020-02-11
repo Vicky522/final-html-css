@@ -44,6 +44,11 @@
   margin: 1rem;
 }
 
+.contact__list li h6 {
+  color: deeppink;
+  font-size: 20px;
+}
+
 .contact__icon {
   display: -webkit-box;
   display: -ms-flexbox;

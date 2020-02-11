@@ -126,4 +126,23 @@
   content: "";
   border-color: white;
 }
+
+.recipe__info-list > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.recipe__info-list > li p {
+  margin-left: 1rem;
+  color: gray;
+}
 /*# sourceMappingURL=recipies-detail.css.map */

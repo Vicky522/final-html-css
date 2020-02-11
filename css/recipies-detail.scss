@@ -142,3 +142,17 @@
         border-color: white;
     }
 }
+
+// Description 
+.recipe__info-list >li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+
+    margin-bottom: 1rem;
+
+   p{
+       margin-left: 1rem;
+       color: gray;
+   }
+}
