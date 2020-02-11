@@ -1,3 +1,4 @@
+// section HERO
 
 .hero-section{
     
@@ -26,8 +27,32 @@
         // left: 40%;
 
         color: white;
+        padding: 2rem;
     }
 }
+
+.title{
+    &__1{
+        padding: 1rem 5rem;
+        border-radius: 5px;
+        font-size: 60px;
+       
+
+    }
+
+    &__2{
+        padding: 1rem 5rem;
+        border-radius: 5px;
+        font-size: 60px;
+    }
+
+    &__3{
+        padding: 1rem 5rem;
+        border-radius: 5px;
+        font-size: 60px;
+    }
+}
+
 
 // section Widgets
 .widgets{

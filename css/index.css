@@ -19,6 +19,25 @@
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  padding: 2rem;
+}
+
+.title__1 {
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  font-size: 60px;
+}
+
+.title__2 {
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  font-size: 60px;
+}
+
+.title__3 {
+  padding: 1rem 5rem;
+  border-radius: 5px;
+  font-size: 60px;
 }
 
 .widgets {
