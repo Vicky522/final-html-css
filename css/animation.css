@@ -216,8 +216,8 @@ body {
 }
 
 .title__3 {
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   background-color: #bdde64;
 }
 /*# sourceMappingURL=animation.css.map */

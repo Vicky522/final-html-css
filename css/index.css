@@ -22,31 +22,22 @@
   padding: 2rem;
 }
 
-.title__1 {
-  font-size: 60px;
+.title {
   text-align: center;
-  border-radius: 5px;
-  padding: 1rem 5rem;
   -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
           box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.title__1 {
+  font-size: 60px;
 }
 
 .title__2 {
   font-size: 50px;
-  text-align: center;
-  border-radius: 5px;
-  padding: 1rem 5rem;
-  -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .title__3 {
   font-size: 40px;
-  text-align: center;
-  border-radius: 5px;
-  padding: 1rem 5rem;
-  -webkit-box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
 .widgets {
