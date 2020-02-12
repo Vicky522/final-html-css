@@ -29,15 +29,33 @@
 }
 
 .title__1 {
-  font-size: 60px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__1 {
+    font-size: 60px;
+  }
 }
 
 .title__2 {
-  font-size: 50px;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__2 {
+    font-size: 50px;
+  }
 }
 
 .title__3 {
-  font-size: 40px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .title__3 {
+    font-size: 40px;
+  }
 }
 
 .widgets {

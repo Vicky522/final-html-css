@@ -37,15 +37,30 @@
     box-shadow: -1px -5px 20px 0px rgba(0, 0, 0, 0.3);
 
     &__1{
-        font-size: 60px;
+        font-size: 30px;
+        // TABLET
+        @media only screen and (min-width:768px){
+            font-size: 60px;
+          }
+      
     }
 
     &__2{
-        font-size: 50px;
+        font-size: 25px;
+        // TABLET
+        @media only screen and (min-width:768px){
+            font-size: 50px;
+          }
+      
     }
 
     &__3{
-        font-size: 40px;
+        font-size: 20px;
+        // TABLET
+        @media only screen and (min-width:768px){
+            font-size: 40px;
+          }
+      
     }
 }
 
